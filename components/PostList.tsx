@@ -11,7 +11,7 @@ const PostList = async () => {
   const postsJson = await posts.json();
   //console.log(postsJson);
   return (
-    <div>
+    <div className="postList">
       {postsJson.map(({ userId, id, title, body }: IPost) => (
         <PostCard key={id} title={title} description={body} />
       ))}
