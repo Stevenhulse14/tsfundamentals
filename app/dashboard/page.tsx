@@ -1,12 +1,12 @@
-import React, { FC } from "react";
+import React from "react";
+import PostList from "@components/PostList";
 
-interface Props {
-  name: string;
-  age: number;
-}
-
-const page: FC<Props> = () => {
-  return <div>dashboard</div>;
+const page = async () => {
+  return (
+    <div>
+      <PostList />
+    </div>
+  );
 };
 
 export default page;
